@@ -1,0 +1,89 @@
+//
+//    Author      : CTS Media GmbH
+//    Copyright   : CTS Media GmbH
+//
+
+// IMPORTANT INSTRUCTIONS!
+// ---------------------------------------------------------------------------------------------------------------------
+// while developing anything that needs colors, set the variable dev (below) to true. This will ensure, that the
+// colors.scss is generated with correct color codes. Setting it to false will make the stylesheet generate with the
+// global variables that are used by the theme in Contao (see internal stylesheet in Contao backend).
+
+// While Developing: In Contao Backend/Theme/Layouts switch from the internal colors.scss to the external color.scss. This
+// way you can make changes in the color.scss and upload the scss to see the effects. At the end of development
+// the color.scss is generated with the global variables, the "_ and _" are replaced with empty strings
+// and imported as an internal stylesheet.
+
+
+// !!! Set development mode: true or false
+$dev: false;
+
+// Contao Production Mode
+$color-white: "_#$col99_";
+
+$color-light-grey: "_#$col3a_";
+$color-middle-grey: "_#$col3b_";
+$color-dark-grey: "_#$col3c_";
+
+$color-dark-brown: "_#$col2a_";
+
+$color-lighter-green: "_#$col1c_";
+$color-light-green: "_#$col1a_";
+$color-dark-green: "_#$col1b_";
+
+$color-facebook: "_#$colFB_";
+$color-twitter: "_#$colTW_";
+$color-gplus: "_#$colG+_";
+$color-linkedin: "_#$colli_";
+$color-instagram: "_#$colin_";
+
+$color-red: $color-gplus;
+
+$shadow-highlight: '_rgba("_$highL_")_';
+$bg-transparent: '_rgba("_$trans_")_';
+
+$primary-font: "_$font_";
+
+
+// Development Mode
+@if $dev == true {
+    $color-white: #ffffff;
+
+    $color-light-grey: #f4f4f4;
+    $color-middle-grey: #dedede;
+    $color-dark-grey: #cecece;
+
+    $color-dark-brown: #574844;
+
+    $color-lighter-green: #a4e02e;
+    $color-light-green: #98d129;
+    $color-dark-green: #8ac419;
+
+    $color-facebook: #3b5998;
+    $color-twitter: #1DA1F2;
+    $color-gplus: #D84B37;
+    $color-linkedin: #0077B5;
+    $color-instagram: #d83474;
+
+    $color-red: $color-gplus;
+
+    $shadow-highlight: rgba(152, 209, 41, 0.7);
+    $bg-transparent: rgba(255,255,255,0.95);
+
+    $primary-font: 'Open Sans';
+}
+
+//$font-family: $primary-font, Arial, Verdana, sans-serif;  // Font is now in contao variable
+$fw-light: 300;
+$fw-regular: 400;
+$fw-bold: 600;
+
+
+%clearfix{
+    &:after {
+        content: "";
+        clear: both;
+        visibility: hidden;
+    }
+}
+

@@ -1,0 +1,21 @@
+
+## IDEs
+.idea/
+nbproject/
+
+## Composer
+/vendor/
+
+## Sass template
+.sass-cache/
+*.css.map
+
+
+## temporary files
+*~
+
+#### CI
+/build/
+/tmp/
+gulp.config.js
+/node_modules/

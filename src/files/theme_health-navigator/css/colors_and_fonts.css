@@ -1,0 +1,435 @@
+/*
+    Author      : CTS Media GmbH
+    Copyright   : CTS Media GmbH
+*/
+* {
+  /* remove blue highlight color on (some) mobile devices */
+  -webkit-tap-highlight-color: rgba(155, 155, 155, 0); }
+  *::selection {
+    background-color: "_#$col2a_";
+    color: "_#$col99_"; }
+  *::-moz-selection {
+    background-color: "_#$col2a_";
+    color: "_#$col99_"; }
+
+/* remove blue color around form elements on focus */
+:focus {
+  outline: none; }
+
+/* make new color around form elements on focus */
+input:focus, input:active, textarea:focus, textarea:active {
+  box-shadow: 0 0 6px '_rgba("_$highL_")_'; }
+
+.radio_container input:focus, .radio_container input:active, .radio_container input:hover,
+.checkbox_container input:focus,
+.checkbox_container input:active,
+.checkbox_container input:hover,
+.mod_search input:focus,
+.mod_search input:active,
+.mod_search input:hover {
+  box-shadow: none !important; }
+
+body {
+  background: "_#$col99_";
+  color: "_#$col2a_"; }
+
+/* TEXT
+-----------------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  color: "_#$col1b_"; }
+
+.h_underline {
+  border-bottom-color: "_#$col3b_"; }
+
+a, a:link, a:visited {
+  color: "_#$col1b_";
+  -webkit-tap-highlight-color: rgba(155, 155, 155, 0); }
+
+/* Navigation Elements
+----------------------------------------------------------------------------------*/
+.pagination ul li a, .pagination ul li a:link, .pagination ul li a:visited {
+  background-color: "_#$col3a_";
+  color: "_#$col2a_"; }
+.pagination ul li a:hover, .pagination ul li a:focus, .pagination ul li a:active {
+  background-color: "_#$col1a_";
+  color: "_#$col99_"; }
+.pagination ul li .current, .pagination ul li .active {
+  background-color: "_#$col1a_";
+  color: "_#$col99_"; }
+
+.nav_main {
+  background: "_#$col3a_"; }
+  .nav_main .level_1 li a, .nav_main .level_1 li a:link, .nav_main .level_1 li a:visited {
+    color: "_#$col2a_"; }
+  .nav_main .level_1 li a:hover, .nav_main .level_1 li a:focus, .nav_main .level_1 li a:active {
+    background-color: "_#$col1a_";
+    color: "_#$col99_"; }
+  .nav_main .level_1 li span.active, .nav_main .level_1 li a.trail, .nav_main .level_1 li span.trail {
+    color: "_#$col99_";
+    background-color: "_#$col1a_"; }
+  .nav_main .level_2, .nav_main .level_3 {
+    background-color: "_#$col3a_"; }
+    .nav_main .level_2 li span.active, .nav_main .level_2 li .active, .nav_main .level_2 li .trail, .nav_main .level_3 li span.active, .nav_main .level_3 li .active, .nav_main .level_3 li .trail {
+      background: "_#$col1b_"; }
+    .nav_main .level_2 li a:hover, .nav_main .level_2 li a:focus, .nav_main .level_2 li a:active, .nav_main .level_3 li a:hover, .nav_main .level_3 li a:focus, .nav_main .level_3 li a:active {
+      background-color: "_#$col1b_";
+      color: "_#$col99_"; }
+
+/* LAYOUT
+-----------------------------------------------------------------------------------*/
+/* FOOTER */
+footer {
+  background-color: "_#$col3a_"; }
+
+.nav_meta {
+  /* Google Maps */ }
+  .nav_meta ul li > span,
+  .nav_meta ul li strong,
+  .nav_meta ul li .trail,
+  .nav_meta ul li .forward {
+    color: "_#$col1a_"; }
+  .nav_meta ul li a, .nav_meta ul li a:link, .nav_meta ul li a:visited {
+    color: "_#$col2a_"; }
+  .nav_meta ul li a:hover, .nav_meta ul li a:focus, .nav_meta ul li a:active {
+    color: "_#$col1a_"; }
+  .nav_meta ul li.active {
+    color: "_#$col2a_"; }
+  .nav_meta iframe {
+    border-color: "_#$col99_"; }
+  .nav_meta .copyright a:hover, .nav_meta .copyright a:active, .nav_meta .copyright a:focus {
+    color: "_#$col2a_"; }
+
+/* SIDEBAR */
+/* sidebar navigation */
+aside .mod_navigation li,
+aside .mod_newsmenu li {
+  background-color: "_#$col3a_"; }
+  aside .mod_navigation li a,
+  aside .mod_navigation li span,
+  aside .mod_navigation li strong,
+  aside .mod_newsmenu li a,
+  aside .mod_newsmenu li span,
+  aside .mod_newsmenu li strong {
+    color: "_#$col2a_"; }
+  aside .mod_navigation li.active, aside .mod_navigation li:not(.active):hover,
+  aside .mod_newsmenu li.active,
+  aside .mod_newsmenu li:not(.active):hover {
+    background-color: "_#$col1a_"; }
+    aside .mod_navigation li.active > a,
+    aside .mod_navigation li.active > span,
+    aside .mod_navigation li.active > strong, aside .mod_navigation li:not(.active):hover > a,
+    aside .mod_navigation li:not(.active):hover > span,
+    aside .mod_navigation li:not(.active):hover > strong,
+    aside .mod_newsmenu li.active > a,
+    aside .mod_newsmenu li.active > span,
+    aside .mod_newsmenu li.active > strong,
+    aside .mod_newsmenu li:not(.active):hover > a,
+    aside .mod_newsmenu li:not(.active):hover > span,
+    aside .mod_newsmenu li:not(.active):hover > strong {
+      color: "_#$col99_"; }
+  aside .mod_navigation li.submenu > *:first-child,
+  aside .mod_newsmenu li.submenu > *:first-child {
+    border-bottom-color: "_#$col99_"; }
+
+.sidebar #right .mod_newslist a, .sidebar #right .mod_newslist a:link, .sidebar #right .mod_newslist a:visited, .sidebar #left .mod_newslist a, .sidebar #left .mod_newslist a:link, .sidebar #left .mod_newslist a:visited {
+  color: "_#$col1a_"; }
+.sidebar #right .mod_newslist .more a, .sidebar #left .mod_newslist .more a {
+  color: "_#$col2a_";
+  background-color: "_#$col3a_"; }
+  .sidebar #right .mod_newslist .more a:hover, .sidebar #right .mod_newslist .more a:focus, .sidebar #right .mod_newslist .more a:active, .sidebar #left .mod_newslist .more a:hover, .sidebar #left .mod_newslist .more a:focus, .sidebar #left .mod_newslist .more a:active {
+    background-color: "_#$col3b_"; }
+
+/* NEWS */
+.calendar-icon .calendar-icon-day {
+  background-color: "_#$col1a_";
+  color: "_#$col99_"; }
+.calendar-icon .calendar-icon-month {
+  background-color: "_#$col3a_";
+  color: "_#$col2a_"; }
+
+.mod_newslist a, .mod_newslist a:link, .mod_newslist a:visited, .mod_eventlist a, .mod_eventlist a:link, .mod_eventlist a:visited, .mod_newsachive a, .mod_newsachive a:link, .mod_newsachive a:visited {
+  color: "_#$col1a_"; }
+.mod_newslist .more a, .mod_newslist time a, .mod_eventlist .more a, .mod_eventlist time a, .mod_newsachive .more a, .mod_newsachive time a {
+  color: "_#$col2a_";
+  background-color: "_#$col3a_"; }
+  .mod_newslist .more a:hover, .mod_newslist .more a:focus, .mod_newslist .more a:active, .mod_newslist time a:hover, .mod_newslist time a:focus, .mod_newslist time a:active, .mod_eventlist .more a:hover, .mod_eventlist .more a:focus, .mod_eventlist .more a:active, .mod_eventlist time a:hover, .mod_eventlist time a:focus, .mod_eventlist time a:active, .mod_newsachive .more a:hover, .mod_newsachive .more a:focus, .mod_newsachive .more a:active, .mod_newsachive time a:hover, .mod_newsachive time a:focus, .mod_newsachive time a:active {
+    background-color: "_#$col3b_"; }
+
+.back a, .back a:link, .back a:visited {
+  color: "_#$col99_";
+  background-color: "_#$col1a_"; }
+.back a:hover, .back a:focus, .back a:active {
+  background-color: "_#$col2a_"; }
+
+/* FORMS */
+.ce_form input, .ce_form textarea, .ce_comments input, .ce_comments textarea {
+  border-color: "_#$col3b_";
+  background-color: "_#$col3a_"; }
+  .ce_form input:hover, .ce_form input:focus, .ce_form input:active, .ce_form textarea:hover, .ce_form textarea:focus, .ce_form textarea:active, .ce_comments input:hover, .ce_comments input:focus, .ce_comments input:active, .ce_comments textarea:hover, .ce_comments textarea:focus, .ce_comments textarea:active {
+    background-color: "_#$col3b_";
+    box-shadow: 0 0 6px '_rgba("_$highL_")_'; }
+.ce_form label, .ce_comments label {
+  color: "_#$col1b_"; }
+.ce_form select, .ce_comments select {
+  border-color: "_#$col3b_"; }
+.ce_form .checkbox_container legend, .ce_comments .checkbox_container legend {
+  color: "_#$col1b_"; }
+.ce_form .checkbox_container input, .ce_form .checkbox_container label, .ce_comments .checkbox_container input, .ce_comments .checkbox_container label {
+  color: "_#$col2a_" !important; }
+.ce_form .submit_container input, .ce_comments .submit_container input {
+  background-color: "_#$col1a_";
+  color: "_#$col99_"; }
+  .ce_form .submit_container input:hover, .ce_form .submit_container input:focus, .ce_form .submit_container input:active, .ce_comments .submit_container input:hover, .ce_comments .submit_container input:focus, .ce_comments .submit_container input:active {
+    background-color: "_#$col2a_";
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0); }
+.ce_form p.error, .ce_comments p.error {
+  color: "_#$colG+_"; }
+
+/* EVENTS, CALENDAR */
+.mod_calendar thead {
+  background-color: "_#$col1a_"; }
+  .mod_calendar thead th a, .mod_calendar thead th a:link, .mod_calendar thead th a:visited {
+    color: "_#$col99_"; }
+  .mod_calendar thead > tr:first-child th {
+    background-color: "_#$col1b_"; }
+.mod_calendar td div.header {
+  background-color: "_#$col3c_"; }
+.mod_calendar td div a, .mod_calendar td div a:link, .mod_calendar td div a:visited {
+  color: "_#$col2a_"; }
+.mod_calendar td div a:hover, .mod_calendar td div a:focus {
+  background-color: "_#$col1a_";
+  color: "_#$col99_"; }
+.mod_calendar td.active {
+  background-color: "_#$col3b_"; }
+.mod_calendar td.today {
+  background-color: "_#$col1b_"; }
+  .mod_calendar td.today div.header {
+    color: "_#$col99_"; }
+  .mod_calendar td.today div a {
+    color: "_#$col99_"; }
+
+.sidebar .mod_calendar thead th {
+  background-color: "_#$col1c_"; }
+  .sidebar .mod_calendar thead th a, .sidebar .mod_calendar thead th a:link, .sidebar .mod_calendar thead th a:visited {
+    color: "_#$col99_"; }
+.sidebar .mod_calendar td a, .sidebar .mod_calendar td a:link, .sidebar .mod_calendar td a:visited {
+  color: "_#$col2a_"; }
+.sidebar .mod_calendar td a:hover, .sidebar .mod_calendar td a:focus, .sidebar .mod_calendar td a:active {
+  background-color: "_#$col1a_";
+  color: "_#$col99_"; }
+.sidebar .mod_calendar td.active {
+  background-color: "_#$col3b_" !important; }
+
+/* BREADCRUMB */
+.mod_breadcrumb ul li a {
+  transition: all 0.3s ease-in; }
+  .mod_breadcrumb ul li a, .mod_breadcrumb ul li a:link, .mod_breadcrumb ul li a:visited {
+    background-color: "_#$col3a_";
+    color: "_#$col2a_"; }
+  .mod_breadcrumb ul li a:before {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: "_#$col99_"; }
+  .mod_breadcrumb ul li a:after {
+    border-bottom-color: transparent;
+    border-left-color: "_#$col3a_";
+    border-top-color: transparent; }
+  .mod_breadcrumb ul li a:hover, .mod_breadcrumb ul li a:focus, .mod_breadcrumb ul li a:active {
+    background-color: "_#$col1a_";
+    color: "_#$col99_"; }
+    .mod_breadcrumb ul li a:hover:after, .mod_breadcrumb ul li a:focus:after, .mod_breadcrumb ul li a:active:after {
+      border-bottom-color: transparent;
+      border-left-color: "_#$col1a_";
+      border-top-color: transparent; }
+.mod_breadcrumb ul li.active, .mod_breadcrumb ul li.trial {
+  background-color: "_#$col1a_";
+  color: "_#$col99_"; }
+  .mod_breadcrumb ul li.active:before, .mod_breadcrumb ul li.trial:before {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: "_#$col99_"; }
+  .mod_breadcrumb ul li.active:after, .mod_breadcrumb ul li.trial:after {
+    border-bottom-color: transparent;
+    border-left-color: "_#$col1a_";
+    border-top-color: transparent; }
+
+/* SITEMAP */
+.mod_sitemap ul.level_1 li {
+  border-bottom-color: "_#$col3b_"; }
+  .mod_sitemap ul.level_1 li a, .mod_sitemap ul.level_1 li a:link, .mod_sitemap ul.level_1 li a:visited {
+    color: "_#$col2a_"; }
+  .mod_sitemap ul.level_1 li a:hover, .mod_sitemap ul.level_1 li a:focus, .mod_sitemap ul.level_1 li a:active {
+    color: "_#$col1a_"; }
+.mod_sitemap ul.level_2 li a, .mod_sitemap ul.level_2 li a:link, .mod_sitemap ul.level_2 li a:visited {
+  color: "_#$col2a_"; }
+.mod_sitemap ul.level_2 li a:hover, .mod_sitemap ul.level_2 li a:focus, .mod_sitemap ul.level_2 li a:active {
+  color: "_#$col1a_"; }
+
+/* HYPERLINKS */
+.ce_download a, .ce_download a:link, .ce_download a:visited, .ce_downloads a, .ce_downloads a:link, .ce_downloads a:visited {
+  color: "_#$col2a_"; }
+  .ce_download a:hover, .ce_download a:focus, .ce_download a:active, .ce_download a:link:hover, .ce_download a:link:focus, .ce_download a:link:active, .ce_download a:visited:hover, .ce_download a:visited:focus, .ce_download a:visited:active, .ce_downloads a:hover, .ce_downloads a:focus, .ce_downloads a:active, .ce_downloads a:link:hover, .ce_downloads a:link:focus, .ce_downloads a:link:active, .ce_downloads a:visited:hover, .ce_downloads a:visited:focus, .ce_downloads a:visited:active {
+    color: "_#$col1a_"; }
+.ce_download ul li, .ce_downloads ul li {
+  border-bottom-color: "_#$col3a_"; }
+  .ce_download ul li.download-element, .ce_downloads ul li.download-element {
+    padding-left: 2.2rem; }
+  .ce_download ul li img, .ce_downloads ul li img {
+    float: left;
+    margin-right: 0.5rem; }
+  .ce_download ul li a:link, .ce_download ul li a:visited, .ce_downloads ul li a:link, .ce_downloads ul li a:visited {
+    padding: 0;
+    display: block;
+    line-height: 2.2rem; }
+  .ce_download ul li a:hover, .ce_download ul li a:focus, .ce_download ul li a:active, .ce_downloads ul li a:hover, .ce_downloads ul li a:focus, .ce_downloads ul li a:active {
+    color: "_#$col1a_"; }
+
+/* SEARCH */
+.mod_search input, .mod_search button {
+  background: "_#$col3a_";
+  color: "_#$col2a_"; }
+  .mod_search input:hover, .mod_search input:focus, .mod_search input:active, .mod_search button:hover, .mod_search button:focus, .mod_search button:active {
+    background-color: "_#$col3b_"; }
+  .mod_search input.submit, .mod_search button.submit {
+    background-color: "_#$col1a_";
+    color: "_#$col99_"; }
+    .mod_search input.submit:hover, .mod_search input.submit:focus, .mod_search input.submit:active, .mod_search button.submit:hover, .mod_search button.submit:focus, .mod_search button.submit:active {
+      background-color: "_#$col2a_"; }
+  .mod_search input button, .mod_search button button {
+    background-color: "_#$col1a_"; }
+    .mod_search input button:hover, .mod_search input button:focus, .mod_search input button:active, .mod_search button button:hover, .mod_search button button:focus, .mod_search button button:active {
+      background-color: "_#$col2a_"; }
+.mod_search .relevance {
+  color: "_#$col2a_"; }
+.mod_search .highlight {
+  color: "_#$col1a_"; }
+
+/* HEADER ELEMENTS */
+.social-wrapper .social-content .social-fb {
+  background-color: "_#$colFB_"; }
+.social-wrapper .social-content .social-twitter {
+  background-color: "_#$colTW_"; }
+.social-wrapper .social-content .social-gplus {
+  background-color: "_#$colG+_"; }
+.social-wrapper .social-content .social-linkedin {
+  background-color: "_#$colli_"; }
+.social-wrapper .social-content .social-instagram {
+  background-color: "_#$colin_"; }
+
+.mod_login {
+  background: '_rgba("_$trans_")_'; }
+  .mod_login .formbody label {
+    color: "_#$col2a_"; }
+  .mod_login .formbody input {
+    border-color: "_#$col3b_"; }
+  .mod_login .error {
+    color: "_#$colG+_"; }
+
+.login-container .submit_container .submit {
+  background-color: "_#$col1a_";
+  color: "_#$col99_"; }
+  .login-container .submit_container .submit:hover, .login-container .submit_container .submit:focus, .login-container .submit_container .submit:active {
+    background-color: "_#$col2a_"; }
+.login-container .login-close {
+  color: "_#$col2a_"; }
+
+.widget-submit button.submit {
+  background-color: "_#$col1a_";
+  color: "_#$col99_"; }
+  .widget-submit button.submit:hover, .widget-submit button.submit:focus, .widget-submit button.submit:active {
+    background-color: "_#$col2a_"; }
+
+/* MISC */
+.show-mobile .mod_search input.text, .show-mobile .mod_search .widget-text {
+  background-color: "_#$col3b_"; }
+
+/* j_colorbox */
+#cboxOverlay {
+  background-color: rgba(255, 255, 255, 0.8) !important; }
+
+#cboxLoadedContent {
+  border-color: "_#$col99_"; }
+
+#cboxCurrent, #cboxTitle, #cboxPrevious {
+  color: "_#$col2a_"; }
+
+#cboxClose, #cboxNext {
+  background-color: "_#$col99_"; }
+  #cboxClose:hover, #cboxClose:focus, #cboxClose:active, #cboxNext:hover, #cboxNext:focus, #cboxNext:active {
+    background: "_#$col99_"; }
+
+/* CONTENT ELEMENTS
+-----------------------------------------------------------------------------------*/
+/* Table */
+table th {
+  background-color: "_#$col1a_";
+  color: "_#$col99_"; }
+table td {
+  background-color: "_#$col3a_"; }
+table tfoot td {
+  background-color: "_#$col1a_";
+  color: "_#$col99_"; }
+
+/* Teaser Home */
+.teaser p:last-child a, .teaser p:last-child a:link, .teaser p:last-child a:visited {
+  background-color: "_#$col1a_";
+  color: "_#$col99_"; }
+  .teaser p:last-child a:hover, .teaser p:last-child a:focus, .teaser p:last-child a:active, .teaser p:last-child a:link:hover, .teaser p:last-child a:link:focus, .teaser p:last-child a:link:active, .teaser p:last-child a:visited:hover, .teaser p:last-child a:visited:focus, .teaser p:last-child a:visited:active {
+    background-color: "_#$col2a_"; }
+
+/* Accordion */
+.toggler {
+  background-color: "_#$col3a_"; }
+  .toggler:hover, .toggler:focus, .toggler:active, .toggler.ui-state-active {
+    background-color: "_#$col1a_";
+    color: "_#$col99_"; }
+
+.icon-faq .toggler:before {
+  color: "_#$col2a_"; }
+.icon-faq .toggler:hover:before, .icon-faq .toggler:focus:before, .icon-faq .toggler:active:before, .icon-faq .toggler.ui-state-active:before {
+  color: "_#$col99_"; }
+
+/* Text with Image */
+#wrapper .image_container {
+  border-color: "_#$col99_"; }
+
+/* Content Slider */
+#wrapper .ce_sliderStart .slider-control a, #wrapper .ce_sliderStart .slider-control a:link, #wrapper .ce_sliderStart .slider-control a:visited {
+  background-color: "_#$col1a_";
+  color: "_#$col99_"; }
+#wrapper .ce_sliderStart .slider-control a:hover, #wrapper .ce_sliderStart .slider-control a:focus, #wrapper .ce_sliderStart .slider-control a:active {
+  background-color: "_#$col2a_"; }
+
+/* FAQ */
+.mod_faqlist ul li {
+  border-bottom-color: "_#$col3b_"; }
+  .mod_faqlist ul li:before {
+    background-color: "_#$col1a_";
+    color: "_#$col99_"; }
+  .mod_faqlist ul li a, .mod_faqlist ul li a:link, .mod_faqlist ul li a:visited {
+    color: "_#$col2a_";
+    background-color: "_#$col99_"; }
+  .mod_faqlist ul li a:hover, .mod_faqlist ul li a:focus, .mod_faqlist ul li a:active {
+    background-color: "_#$col3a_"; }
+
+/* MOBILE !
+-----------------------------------------------------------------------------------*/
+/* BREAKPOINTS */
+@media (min-width: 1px) and (max-width: 1023px) {
+  .nav-wrapper {
+    background-color: "_#$col3a_"; }
+
+  .nav_main .level_2 {
+    background-color: "_#$col3b_"; }
+  .nav_main .level_3 {
+    background-color: "_#$col3c_"; }
+
+  input:checked + .button-nav-mobile {
+    background-color: "_#$col99_"; } }
+body {
+  font-family: "_$font_", Arial, Verdana, sans-serif; }
+
+input, select, textarea, .submit, button, label, fieldset {
+  font-family: "_$font_", Arial, Verdana, sans-serif; }
+
+/*# sourceMappingURL=colors_and_fonts.css.map */

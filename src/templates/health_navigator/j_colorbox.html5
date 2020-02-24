@@ -1,0 +1,31 @@
+<?php if(version_compare(VERSION, '4', '<')) : ?>
+    <?php
+        $GLOBALS['TL_CSS'][] = 'assets/jquery/colorbox/'. COLORBOX .'/css/colorbox.min.css||static';
+    ?>
+<?php else: ?>
+    <?php
+        $GLOBALS['TL_CSS'][] = 'assets/colorbox/css/colorbox.min.css||static';
+    ?>
+<?php endif; ?>
+
+<?php if(version_compare(VERSION, '4', '<')) : ?>
+  <script src="<?php echo TL_ASSETS_URL; ?>assets/jquery/colorbox/<?php echo COLORBOX; ?>/js/colorbox.min.js"></script>
+<?php else: ?>
+  <script src="<?= TL_ASSETS_URL ?>assets/colorbox/js/colorbox.min.js"></script>
+<?php endif; ?>
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $('a[data-lightbox]').map(function() {
+        $(this).colorbox({
+          // Put custom options here
+          loop: false,
+          rel: $(this).attr('data-lightbox'),
+          maxWidth: '95%',
+          maxHeight: '95%',
+		  current: "Bild {current} von {total}"
+        });
+      });
+    });
+  })(jQuery);
+</script>

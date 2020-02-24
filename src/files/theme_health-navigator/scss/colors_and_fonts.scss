@@ -1,0 +1,881 @@
+/*
+    Author      : CTS Media GmbH
+    Copyright   : CTS Media GmbH
+*/
+
+@import 'variables';
+
+*{
+    &::selection{
+        background-color: $color-dark-brown;
+        color: $color-white;
+    }
+    &::-moz-selection{
+        background-color: $color-dark-brown;
+        color: $color-white;
+    }
+    /* remove blue highlight color on (some) mobile devices */
+    -webkit-tap-highlight-color:rgba(155,155,155,0);
+}
+
+/* remove blue color around form elements on focus */
+:focus {
+    outline: none;
+}
+/* make new color around form elements on focus */
+input:focus, input:active, textarea:focus, textarea:active {
+    box-shadow: 0 0 6px $shadow-highlight;
+}
+
+.radio_container,
+.checkbox_container,
+.mod_search {
+
+    input {
+        &:focus,
+        &:active,
+        &:hover {
+            box-shadow: none !important;
+        }
+    }
+}
+
+body {
+    background: $color-white;
+    color: $color-dark-brown;
+}
+
+/* TEXT
+-----------------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6{
+    color: $color-dark-green;
+
+}
+.h_underline{
+    border-bottom-color: $color-middle-grey
+}
+
+a{
+    &, &:link, &:visited{
+        color: $color-dark-green;
+        -webkit-tap-highlight-color: rgba(155,155,155,0);
+    }
+}
+
+
+/* Navigation Elements
+----------------------------------------------------------------------------------*/
+.pagination {
+
+    ul {
+        li {
+            a {
+                &, &:link, &:visited {
+                    background-color: $color-light-grey;
+                    color: $color-dark-brown;
+                }
+
+                &:hover, &:focus, &:active {
+                    background-color: $color-light-green;
+                    color: $color-white;
+                }
+            }
+
+            .current, .active {
+                background-color: $color-light-green;
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.nav_main{
+    background: $color-light-grey;
+    .level_1{
+        li{
+            a{
+                &, &:link, &:visited{
+                    color: $color-dark-brown;
+                }
+                &:hover, &:focus, &:active{
+                    background-color: $color-light-green;
+                    color: $color-white;
+                }
+            }
+
+            span.active, a.trail, span.trail{
+                color: $color-white;
+                background-color: $color-light-green;
+            }
+        }
+    }
+    .level_2, .level_3{
+        background-color: $color-light-grey;
+        li{
+            span.active, .active, .trail{
+                background: $color-dark-green;
+            }
+
+            a{
+                &:hover, &:focus, &:active{
+                    background-color: $color-dark-green;
+                    color: $color-white;
+                }
+
+            }
+
+        }
+    }
+}
+
+/* LAYOUT
+-----------------------------------------------------------------------------------*/
+
+/* FOOTER */
+footer {
+    background-color: $color-light-grey;
+}
+
+.nav_meta{
+    ul{
+        li{
+            > span,
+            strong,
+            .trail,
+            .forward{
+                color: $color-light-green;
+            }
+
+            a {
+                &, &:link, &:visited{
+                    color: $color-dark-brown;
+                }
+                &:hover, &:focus, &:active{
+                    color: $color-light-green;
+                }
+            }
+            &.active {
+                color: $color-dark-brown;
+            }
+        }
+    }
+    /* Google Maps */
+
+    iframe{
+        border-color: $color-white;
+    }
+
+    .copyright {
+        a {
+            &:hover, &:active, &:focus {
+                color:$color-dark-brown;
+            }
+        }
+    }
+}
+
+/* SIDEBAR */
+
+/* sidebar navigation */
+
+aside {
+    .mod_navigation,
+    .mod_newsmenu {
+        li {
+            background-color: $color-light-grey;
+
+            a,
+            span,
+            strong {
+                color: $color-dark-brown;
+            }
+
+            &.active,
+            &:not(.active):hover {
+                background-color: $color-light-green;
+
+                > a,
+                > span,
+                > strong {
+                    color: $color-white;
+                }
+            }
+
+            &.submenu {
+                > *:first-child {
+                    border-bottom-color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.sidebar {
+    #right, #left {
+        .mod_newslist {
+            a {
+                &, &:link, &:visited {
+                    color: $color-light-green;
+                }
+            }
+
+            .more {
+                a {
+                    color: $color-dark-brown;
+                    background-color: $color-light-grey;
+
+                    &:hover, &:focus, &:active {
+                        background-color: $color-middle-grey;
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+
+/* NEWS */
+
+.calendar-icon{
+    .calendar-icon-day{
+        background-color: $color-light-green;
+        color: $color-white;
+    }
+    .calendar-icon-month{
+        background-color: $color-light-grey;
+        color: $color-dark-brown;
+    }
+}
+
+.mod_newslist, .mod_eventlist, .mod_newsachive {
+    a {
+        &, &:link, &:visited {
+            color: $color-light-green;
+        }
+    }
+    .more, time{
+        a{
+            color: $color-dark-brown;
+            background-color: $color-light-grey;
+
+            &:hover, &:focus, &:active{
+                background-color: $color-middle-grey;
+            }
+        }
+    }
+}
+.back{
+
+    a{
+        &, &:link, &:visited{
+            color: $color-white;
+            background-color: $color-light-green;
+        }
+
+        &:hover, &:focus, &:active{
+            background-color: $color-dark-brown;
+        }
+    }
+}
+
+/* FORMS */
+
+.ce_form, .ce_comments {
+    input, textarea {
+        border-color: $color-middle-grey;
+        background-color: $color-light-grey;
+
+        &:hover, &:focus, &:active {
+            background-color: $color-middle-grey;
+            box-shadow: 0 0 6px $shadow-highlight;
+        }
+    }
+
+    label{
+        color: $color-dark-green;
+    }
+
+    select{
+        border-color: $color-middle-grey;
+    }
+
+    .checkbox_container{
+        legend{
+            color: $color-dark-green;
+        }
+        input, label{
+            color: $color-dark-brown !important;
+        }
+
+    }
+
+    .submit_container{
+        input{
+            background-color: $color-light-green;
+            color: $color-white;
+
+            &:hover, &:focus, &:active{
+                background-color: $color-dark-brown;
+                box-shadow: 0 0 6px rgba(0, 0, 0, 0);
+            }
+        }
+    }
+
+    p.error{
+        color: $color-red;
+    }
+}
+
+/* EVENTS, CALENDAR */
+
+.mod_calendar {
+    thead {
+        background-color: $color-light-green;
+        th {
+            a {
+                &, &:link, &:visited {
+                    color: $color-white;
+                }
+            }
+        }
+
+        > tr:first-child {
+            th {
+                background-color: $color-dark-green;
+            }
+        }
+    }
+    td{
+
+        div{
+            &.header{
+                background-color: $color-dark-grey;
+            }
+
+            a{
+
+                &, &:link, &:visited{
+                    color: $color-dark-brown;
+                }
+
+                &:hover, &:focus{
+                    background-color: $color-light-green;
+                    color: $color-white;
+                }
+
+            }
+        }
+
+        &.active{
+            background-color: $color-middle-grey;
+        }
+
+        &.today {
+            background-color: $color-dark-green;
+
+            div {
+                &.header {
+                    color: $color-white;
+                }
+                a {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.sidebar{
+    .mod_calendar{
+        thead{
+            th{
+                background-color: $color-lighter-green;
+
+                a{
+                    &, &:link, &:visited{
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+
+        td{
+            a{
+                &, &:link, &:visited{
+                    color: $color-dark-brown;
+                }
+
+                &:hover, &:focus, &:active{
+                    background-color: $color-light-green;
+                    color: $color-white;
+
+                }
+            }
+
+            &.active{
+                background-color: $color-middle-grey !important;
+            }
+        }
+    }
+
+}
+
+
+
+/* BREADCRUMB */
+
+.mod_breadcrumb{
+    ul{
+        li{
+            a{
+                transition: all 0.3s ease-in;
+
+                &, &:link, &:visited{
+                    background-color: $color-light-grey;
+                    color: $color-dark-brown;
+                }
+
+                &:before{
+                    border-top-color: transparent;
+                    border-bottom-color: transparent;
+                    border-left-color: $color-white;
+                }
+
+                &:after{
+                    border-bottom-color: transparent;
+                    border-left-color: $color-light-grey;
+                    border-top-color: transparent;
+                }
+
+                &:hover, &:focus, &:active{
+                    background-color: $color-light-green;
+                    color: $color-white;
+
+                    &:after{
+                        border-bottom-color: transparent;
+                        border-left-color: $color-light-green;
+                        border-top-color: transparent;
+                    }
+
+                }
+
+            }
+
+            &.active, &.trial {
+                background-color: $color-light-green;
+                color: $color-white;
+                &:before{
+                    border-top-color: transparent;
+                    border-bottom-color: transparent;
+                    border-left-color: $color-white;
+                }
+
+                &:after{
+                    border-bottom-color: transparent;
+                    border-left-color: $color-light-green;
+                    border-top-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+/* SITEMAP */
+
+.mod_sitemap {
+    ul {
+        &.level_1 {
+            li {
+                border-bottom-color: $color-middle-grey;
+
+                a {
+                    &, &:link, &:visited {
+                        color: $color-dark-brown;
+                    }
+
+                    &:hover, &:focus, &:active {
+                        color: $color-light-green;
+                    }
+                }
+            }
+        }
+
+        &.level_2{
+            li{
+                a{
+                    &, &:link, &:visited{
+                        color: $color-dark-brown;
+                    }
+
+                    &:hover, &:focus, &:active{
+                        color: $color-light-green;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/* HYPERLINKS */
+.ce_download, .ce_downloads {
+
+    a {
+        &, &:link, &:visited {
+            color: $color-dark-brown;
+
+            &:hover, &:focus, &:active {
+                color: $color-light-green;
+            }
+
+        }
+
+    }
+
+    ul{
+        li{
+            border-bottom-color: $color-light-grey;
+
+            &.download-element {
+                padding-left: 2.2rem;
+            }
+
+            img{
+                float: left;
+                margin-right: 0.5rem;
+            }
+
+
+            a{
+                &:link, &:visited{
+                    padding: 0;
+                    display: block;
+                    line-height: 2.2rem;
+                }
+
+                &:hover, &:focus, &:active{
+                    color: $color-light-green;
+                }
+            }
+
+        }
+    }
+}
+
+
+/* SEARCH */
+
+.mod_search{
+    input, button{
+        background: $color-light-grey;
+        color: $color-dark-brown;
+
+        &:hover, &:focus, &:active{
+            background-color: $color-middle-grey;
+        }
+
+        &.submit{
+            background-color: $color-light-green;
+            color: $color-white;
+
+            &:hover, &:focus, &:active{
+                background-color: $color-dark-brown;
+            }
+        }
+
+        button {
+            background-color: $color-light-green;
+
+            &:hover, &:focus, &:active{
+                background-color: $color-dark-brown;
+            }
+        }
+    }
+
+    .relevance{
+        color: $color-dark-brown;
+    }
+
+    .highlight{
+        color: $color-light-green;
+    }
+}
+
+/* HEADER ELEMENTS */
+.social-wrapper{
+    .social-content{
+        .social-fb{
+            background-color: $color-facebook;
+        }
+
+        .social-twitter{
+            background-color: $color-twitter;
+        }
+
+        .social-gplus{
+            background-color: $color-gplus;
+        }
+
+        .social-linkedin{
+            background-color: $color-linkedin;
+        }
+
+        .social-instagram{
+            background-color: $color-instagram;
+        }
+
+    }
+}
+
+
+.mod_login{
+    background: $bg-transparent;
+
+    .formbody{
+        label{
+            color: $color-dark-brown;
+        }
+
+        input{
+            border-color: $color-middle-grey;
+        }
+    }
+
+    .error{
+        color: $color-red;
+    }
+}
+
+.login-container{
+    .submit_container{
+        .submit{
+            background-color: $color-light-green;
+            color: $color-white;
+
+            &:hover, &:focus, &:active{
+                background-color: $color-dark-brown;
+            }
+        }
+    }
+
+    .login-close{
+        color: $color-dark-brown;
+    }
+}
+
+.widget-submit {
+    button {
+        &.submit{
+            background-color: $color-light-green;
+            color: $color-white;
+
+            &:hover, &:focus, &:active{
+                background-color: $color-dark-brown;
+            }
+        }
+    }
+}
+
+
+/* MISC */
+
+.show-mobile{
+    .mod_search{
+        input.text, .widget-text{
+            background-color: $color-middle-grey;
+        }
+    }
+}
+
+
+/* j_colorbox */
+
+#cboxOverlay{
+    background-color: rgba(255,255,255,0.8) !important;
+}
+
+#cboxLoadedContent {
+    border-color: $color-white;
+}
+
+#cboxCurrent, #cboxTitle, #cboxPrevious {
+    color: $color-dark-brown;
+}
+
+#cboxClose, #cboxNext{
+    background-color: $color-white;
+
+    &:hover, &:focus, &:active{
+        background: $color-white;
+    }
+}
+
+
+/* CONTENT ELEMENTS
+-----------------------------------------------------------------------------------*/
+/* Table */
+
+table{
+    th{
+        background-color: $color-light-green;
+        color: $color-white;
+    }
+
+    td{
+        background-color: $color-light-grey;
+    }
+
+    tfoot{
+        td{
+            background-color: $color-light-green;
+            color: $color-white;
+        }
+    }
+}
+
+/* Teaser Home */
+
+.teaser{
+    p:last-child{
+        a{
+            &, &:link, &:visited{
+                background-color: $color-light-green;
+                color: $color-white;
+
+                &:hover, &:focus, &:active{
+                    background-color: $color-dark-brown;
+                }
+            }
+        }
+    }
+}
+
+/* Accordion */
+
+.toggler{
+    background-color: $color-light-grey;
+
+    &:hover, &:focus, &:active, &.ui-state-active{
+        background-color: $color-light-green;
+        color: $color-white;
+    }
+}
+
+.icon-faq{
+    .toggler{
+        &:before{
+            color: $color-dark-brown;
+        }
+
+        &:hover, &:focus, &:active, &.ui-state-active{
+            &:before{
+                color: $color-white;
+            }
+
+        }
+    }
+}
+
+/* Text with Image */
+
+#wrapper{
+
+    .image_container{
+        border-color: $color-white;
+    }
+}
+
+
+/* Content Slider */
+
+#wrapper{
+    .ce_sliderStart{
+        .slider-control{
+            a{
+                &, &:link, &:visited{
+                    background-color: $color-light-green;
+                    color: $color-white;
+                }
+
+                &:hover, &:focus, &:active{
+                    background-color: $color-dark-brown;
+                }
+            }
+        }
+    }
+}
+
+/* FAQ */
+
+.mod_faqlist{
+    ul{
+        li{
+            border-bottom-color: $color-middle-grey;
+
+            &:before{
+                background-color: $color-light-green;
+                color: $color-white;
+            }
+
+            a{
+                &, &:link, &:visited{
+                    color: $color-dark-brown;
+                    background-color: $color-white;
+                }
+
+                &:hover, &:focus, &:active{
+                    background-color: $color-light-grey;
+                }
+            }
+        }
+    }
+}
+
+/* MOBILE !
+-----------------------------------------------------------------------------------*/
+/* BREAKPOINTS */
+
+@media (min-width: 1px) and (max-width: 1023px){
+    .nav-wrapper{
+        background-color: $color-light-grey;
+    }
+
+    .nav_main {
+        .level_1 {
+            > li {
+                &.trail {
+                    .level_2 {
+                        > li {
+                            &.active, &.trail {
+                                //background-color: $color-middle-grey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .level_2 {
+            background-color: $color-middle-grey
+        }
+        .level_3 {
+            background-color: $color-dark-grey;
+        }
+    }
+    input:checked {
+
+        & + .button-nav-mobile {
+
+            background-color: $color-white;
+        }
+    }
+}
+
+body {
+    font-family: $primary-font, Arial, Verdana, sans-serif;
+}
+
+input, select, textarea, .submit, button, label, fieldset {
+    font-family: $primary-font, Arial, Verdana, sans-serif;
+}

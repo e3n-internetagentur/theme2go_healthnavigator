@@ -1,0 +1,10 @@
+<ul>
+  <?php foreach ($this->body as $class=>$row): ?>
+    <?php foreach ($row as $col): ?>
+      <?php if ($col->addImage): ?>
+        <li class="<?php echo $class; ?> <?php echo $col->class; ?>" style="background-image:url('<?php echo $col->src; ?>');">
+        </li>
+      <?php endif; ?>
+    <?php endforeach; ?>
+  <?php endforeach; ?>
+</ul>

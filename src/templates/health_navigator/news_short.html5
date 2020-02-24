@@ -1,0 +1,21 @@
+
+<div class="layout_short arc_<?php echo $this->archive->id; ?> block<?php echo $this->class; ?>">
+
+  <?php if ($this->hasMetaFields): ?>
+    <div class="calendar-icon">
+<div class="calendar-icon-day"><?php echo $this->parseDate("d", $this->timestamp); ?></div>
+<div class="calendar-icon-month"><?php echo $this->parseDate("M", $this->timestamp); ?></div>
+</div>
+  <?php endif; ?>
+
+  <h2><?php echo $this->linkHeadline; ?></h2>
+
+  <div class="teaser">
+    <?php echo $this->teaser; ?>
+  </div>
+
+  <?php if ($this->text || $this->teaser): ?>
+    <p class="more"><?php echo $this->more; ?></p>
+  <?php endif; ?>
+
+</div>

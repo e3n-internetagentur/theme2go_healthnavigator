@@ -1,0 +1,23 @@
+/*
+    Author      : CTS Media GmbH
+    Copyright   : CTS Media GmbH
+*/
+
+@import 'variables';
+
+/* Browser */
+
+.ie8{
+    .logo, .right-elements{
+        top: 0;
+        margin-top: 2rem;
+    }
+}
+
+.safari{
+    font-weight: 400;
+    
+    *{
+        font-weight: 400 !important;  
+    }
+}
