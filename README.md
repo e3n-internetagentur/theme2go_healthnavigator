@@ -1,6 +1,14 @@
 # Theme2Go Series
 ## #1 Healthnavigator
 
+
+### Notice
+
+This theme was available in the official [contao theme store](https://themes.contao.org/) for buying. 
+Since we stopped development and support and took it offline, we decided to provide it to the community as open source and for free.  
+e3N has no plans to continue development and support on this theme. We're open for pull requests by the community. 
+We may or may not answering questions. 
+
 ### Description
 
 The theme has a Flat Design with a modern and elegant font. It is presented with colours found in nature using a clear colour scheme that emphasizes the content.
